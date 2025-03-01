@@ -9,8 +9,14 @@ void setup() {
   listaAsistencia[0]= 453;//asignarle a un arreglo un nuevo valor
   nuevaVariable = listaAsistencia[1] + listaAsistencia[3];//Almacena la suma de X[1] y x[3] en la variable nuevaVariable
   nuevaVariable = nuevaVariable + listaAsistencia[3];// Añede en la variable SUMA el valor de X[4]
-  Serial.println("El resultado es:");
-  Serial.print(nuevaVariable);
+  Serial.print("El resultado es:");
+  Serial.println(nuevaVariable);
+  Serial.print("El valor de la posicion [0]:");
+  Serial.println(listaAsistencia[0]);
+
+
+  const int LED = 2;
+  const float pi = 3.1415925654;
 }
 
 void loop() {
