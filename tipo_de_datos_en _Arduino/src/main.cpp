@@ -1,5 +1,8 @@
 //tipos de datos:arrays
 #include <Arduino.h>
+//tipo de datos constantes
+#define LED 2// la mejor forma para crear una variable la sintaxis es: #define nombredelaconstante valor, el nombre de la variable en mayus
+
 
 void setup() {
   // put your setup code here, to run once:
@@ -15,10 +18,21 @@ void setup() {
   Serial.println(listaAsistencia[0]);
 
 
-  const int LED = 2;
+  const int XX = 2;
   const float pi = 3.1415925654;
+
+  
+//configuracion de GPIOS
+pinMode(LED, OUTPUT);//configuro el GPIO2 como salida
+
+
+  
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //encender y apagar el LED
+  digitalWrite(LED, HIGH);//1enceder el LED
+  delay(1000);//Esperar un segundo
+  digitalWrite(LED, LOW);//apagar el LED
+  delay(1000);//Esperar un segundo
 }
